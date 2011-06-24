@@ -963,6 +963,12 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4</version><!-- Correct? -->
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.icegreen</groupId>
       <artifactId>greenmail</artifactId>
       <version>1.3</version>
