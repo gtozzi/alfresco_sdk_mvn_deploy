@@ -12,7 +12,7 @@ TMP_DIR=/tmp/alfresco-sdk
 
 
 mkdir -p ${TMP_DIR}
-unzip -u -o ~/Download/alfresco-enterprise-sdk-${ALFRESCO_SDK_VERSION}.zip -d ${TMP_DIR}/
+unzip -u -o ~/Downloads/alfresco-enterprise-sdk-${ALFRESCO_SDK_VERSION}.zip -d ${TMP_DIR}/
 
 
 # Third party libraries patched by Alfresco.
@@ -35,6 +35,7 @@ mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPO
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/bliki-3.0.2.jar -DgroupId=info.bliki.wiki -DartifactId=bliki-core -Dversion=3.0.2 -Dpackaging=jar
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/cglib-nodep-2.2_beta1.jar -DgroupId=cglib -DartifactId=cglib-nodep -Dversion=2.2_beta1 -Dpackaging=jar
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/chemistry-abdera-0.5-SNAPSHOT.jar -DgroupId=org.apache.chemistry.abdera -DartifactId=chemistry-abdera -Dversion=0.5-SNAPSHOT -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/chemistry-tck-atompub-0.5-SNAPSHOT.jar -DgroupId=org.apache.chemistry -DartifactId=chemistry-tck-atompub -Dversion=0.5-SNAPSHOT -Dpackaging=jar
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/facebook_070716.jar -DgroupId=com.facebook.api -DartifactId=facebook-java-api -Dversion=070716 -Dpackaging=jar
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/hrtlib.jar -DgroupId=com.vladium -DartifactId=hrtlib -Dversion=1.0 -Dpackaging=jar
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_URL} -DrepositoryId=${MAVEN_REPOSITORY_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/jooconverter-2.1.0.jar -DgroupId=net.sf.jooreports -DartifactId=jooconverter -Dversion=2.1.0 -Dpackaging=jar
