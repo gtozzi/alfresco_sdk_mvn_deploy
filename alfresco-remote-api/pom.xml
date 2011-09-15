@@ -4,13 +4,13 @@
 
   <groupId>org.alfresco</groupId>
   <artifactId>alfresco-remote-api</artifactId>
-  <version>3.3.5</version>
+  <version>3.4.b</version>
   <packaging>jar</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring-surf.version>1.0.0.CI-SNAPSHOT</spring-surf.version>
-    <chemistry.version>0.5-SNAPSHOT</chemistry.version>
+    <chemistry.version>0.1-SNAPSHOT</chemistry.version>
   </properties>
 
   <dependencies>
