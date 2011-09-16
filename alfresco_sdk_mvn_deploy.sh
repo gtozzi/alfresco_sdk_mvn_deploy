@@ -66,8 +66,18 @@ mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_SNAPSHOT_URL} -DrepositoryId=${M
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_SNAPSHOT_URL} -DrepositoryId=${MAVEN_REPOSITORY_SNAPSHOT_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/spring-surf/spring-webscripts-1.0.0.CI-SNAPSHOT-tests.jar -DgroupId=org.springframework.extensions.surf -DartifactId=spring-webscripts -Dversion=1.0.0.CI-SNAPSHOT -Dpackaging=jar -Dclassifier=tests
 mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_SNAPSHOT_URL} -DrepositoryId=${MAVEN_REPOSITORY_SNAPSHOT_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/spring-surf/spring-webscripts-api-1.0.0.CI-SNAPSHOT.jar -DgroupId=org.springframework.extensions.surf -DartifactId=spring-webscripts-api -Dversion=1.0.0.CI-SNAPSHOT -Dpackaging=jar
 
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/commons/commons-dbcp-1.2.2.jar -DgroupId=commons-dbcp -DartifactId=commons-dbcp -Dversion=1.2.2 -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/commons/commons-discovery-0.2.jar -DgroupId=commons-discovery -DartifactId=commons-discovery -Dversion=0.2 -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/commons/commons-compress-1.1.jar -DgroupId=commons-compress -DartifactId=commons-compress -Dversion=1.1 -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/commons/commons-pool-1.4.jar -DgroupId=commons-pool -DartifactId=commons-pool -Dversion=1.4 -Dpackaging=jar
+
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/dependencies/quartz-1.8.3.jar -DgroupId=quartz -DartifactId=quartz -Dversion=1.8.3 -Dpackaging=jar
+
 
 # Alfresco libraries and source from the SDK.
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/alfresco-jlan-embed-${ALFRESCO_SDK_VERSION}.jar -Dclassifier=${ALFRESCO_SDK_CLASSIFIER} -DgroupId=org.alfresco -DartifactId=alfresco-jlan-embed -Dversion=${ALFRESCO_SDK_VERSION} -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/alfresco-mbeans-${ALFRESCO_SDK_VERSION}.jar -Dclassifier=${ALFRESCO_SDK_CLASSIFIER} -DgroupId=org.alfresco -DartifactId=alfresco-mbeans -Dversion=${ALFRESCO_SDK_VERSION} -Dpackaging=jar
+mvn deploy:deploy-file -Durl=${MAVEN_REPOSITORY_RELEASE_URL} -DrepositoryId=${MAVEN_REPOSITORY_RELEASE_ID} -Dfile=${TMP_DIR}/lib/server/alfresco-data-model-${ALFRESCO_SDK_VERSION}.jar -Dclassifier=${ALFRESCO_SDK_CLASSIFIER} -DgroupId=org.alfresco -DartifactId=alfresco-data-model -Dversion=${ALFRESCO_SDK_VERSION} -Dpackaging=jar
 
 mkdir -p alfresco-core/src/main/java
 unzip -u -o ${TMP_DIR}/src/alfresco-core-src.zip 'java/*' -d alfresco-core/src/main

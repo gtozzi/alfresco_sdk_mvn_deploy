@@ -16,28 +16,28 @@
       <groupId>org.alfresco</groupId>
       <artifactId>alfresco-core</artifactId>
       <version>${project.version}</version>
-      <classifier>enterprise</classifier>
+      <classifier>community</classifier>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.alfresco</groupId>
       <artifactId>alfresco-repository</artifactId>
       <version>${project.version}</version>
-      <classifier>enterprise</classifier>
+      <classifier>community</classifier>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.alfresco</groupId>
       <artifactId>alfresco-remote-api</artifactId>
       <version>${project.version}</version>
-      <classifier>enterprise</classifier>
+      <classifier>community</classifier>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.alfresco</groupId>
       <artifactId>alfresco-jndi-client</artifactId>
       <version>${project.version}</version>
-      <classifier>enterprise</classifier>
+      <classifier>community</classifier>
       <scope>compile</scope>
     </dependency>
     <dependency>

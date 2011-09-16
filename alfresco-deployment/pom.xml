@@ -16,7 +16,7 @@
       <groupId>org.alfresco</groupId>
       <artifactId>alfresco-core</artifactId>
       <version>${project.version}</version>
-      <classifier>enterprise</classifier>
+      <classifier>community</classifier>
       <scope>compile</scope>
     </dependency>
   </dependencies>
