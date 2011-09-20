@@ -91,10 +91,9 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.extensions.surf</groupId>
-      <artifactId>spring-webscripts</artifactId>
+      <artifactId>spring-webscripts-tests</artifactId>
       <version>${spring-surf.version}</version>
       <scope>compile</scope>
-      <classifier>tests</classifier>
       <exclusions>
         <exclusion>
           <groupId>org.apache.abdera</groupId>
